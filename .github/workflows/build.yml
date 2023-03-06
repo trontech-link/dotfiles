@@ -51,7 +51,7 @@ jobs:
     #     image: tonistiigi/binfmt:latest
     #     platforms: all
     - name: Install nix
-      uses: cachix/install-nix-action@v18
+      uses: cachix/install-nix-action@v20
       with:
         nix_path: "${{ matrix.nixPath }}"
         # nix 2.6 breaks restrict-eval, when using the NIX_PATH
